@@ -36,10 +36,10 @@ export const Navbarpath = [
         title: "YouTube",
         Component: YouTube,
     },
-    {
-        id: 6,
-        path: "/logIn",
-        title: "LogIn",
-        Component: Login,
-    }
+    // {
+    //     id: 6,
+    //     path: "/logIn",
+    //     title: "LogIn",
+    //     Component: Login,
+    // }
 ]
