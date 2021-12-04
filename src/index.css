@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Old+Italic&family=Vesper+Libre:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Old+Italic&family=Vesper+Libre:wght@400;500&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Noto Sans Old Italic', sans-serif;
+  font-family: "Noto Sans Old Italic", sans-serif;
 }
 body {
   margin: 0;
   padding: 0;
+  background: #e5e5e5;
 }
