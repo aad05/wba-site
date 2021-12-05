@@ -10,21 +10,33 @@ export const Wrapper = styled.div `
     height: 90px;
 `
 export const Container = styled.div `
-    width: 90%;
+    width: 95%;
     margin: auto;
 `
 export const Left = styled.div ``
 export const Betwen = styled.div `
     display: flex;
-    width: 500px;
+    width: 700px;
     justify-content: space-around;
     align-items: center;
+    @media (max-width: 1700px) {
+        width: 900px;
+    }
+    @media (max-width: 1500px) {
+        width: 800px;
+    }
+    @media (max-width: 1400px) {
+        width: 700px;
+    }
+    @media (max-width: 1300px) {
+        width: 600px;
+    }
     @media (max-width: 1100px) {
-    width: 450px;
-  }
+        width: 550px;
+    }
   @media (max-width: 1000px) {
-    width: 400px;
-  }
+        width: 500px;
+    }
 `
 export const Right = styled.div ``
 export const Button = styled.div `
@@ -41,11 +53,16 @@ export const Button = styled.div `
     @media (max-width: 1300px) {
     width: ${({longer})=> longer ? "123px":"71px"};
     }
-    @media (max-width: 1100px) {
+    @media (max-width: 1200px) {
     height: 44px;
+    width: ${({longer})=> longer ? "113px":"71px"};
     }
     @media (max-width: 1000px) {
-    width: ${({longer})=> longer ? "123px":"71px"};
+    width: ${({longer})=> longer ? "103px":"71px"};
+    height: 37px;
+    }
+    @media (max-width: 900px) {
+    width: ${({longer})=> longer ? "93px":"71px"};
     }
     :hover {
         box-shadow: inset -8px -8px 20px rgba(255, 255, 255, 0.64), inset 8px 8px 20px rgba(13, 39, 80, 0.16);
@@ -57,6 +74,10 @@ export const Icon = styled.div`
     font-weight: 900;
     font-size: 27px;
     line-height: 32px;
+    transition: all .3s;
+    @media (max-width: 1200px) { 
+        font-size: 25px;
+    }
 `;
 export const Item = styled.div `
     font-family: 'Noto Sans Old Italic', sans-serif;

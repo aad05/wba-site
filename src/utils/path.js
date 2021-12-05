@@ -39,7 +39,6 @@ export const Navbarpath = [
     {
         id: 6,
         path: "/logIn",
-        title: "LogIn",
         Component: Login,
     }
 ]

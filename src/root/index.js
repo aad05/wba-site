@@ -10,7 +10,7 @@ export const Root =()=>{
         <Router>
         <Switch>
             {Navbarpath.map(({ id, path }) => (
-                <Route exact key={id} component={Navbar} path={path} />
+                    <Route exact key={id} component={Navbar} path={path} />
             ))}
         </Switch>
         <Switch>

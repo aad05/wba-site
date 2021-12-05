@@ -23,7 +23,9 @@ export const Navbar = () =>{
                 })}
                 </Betwen>
                 <Right>
-                    <Button longer={true}><Title>Log In</Title></Button>
+                    <Link to={"/logIn"}>
+                        <Button longer={true}><Title>Log In</Title></Button>
+                    </Link>
                 </Right>
                 </Floater>
             </Container>
