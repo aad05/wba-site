@@ -8,9 +8,10 @@ export const Wrapper = styled.div `
     background: #E6E7EE;
     box-shadow: 0px 4px 20px rgba(13, 39, 80, 0.1);
     height: 90px;
+    
 `
 export const Container = styled.div `
-    width: 95%;
+    width: 80%;
     margin: auto;
 `
 export const Left = styled.div ``
@@ -90,7 +91,7 @@ export const Item = styled.div `
 `
 export const Floater = styled.div `
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 `
 export const Title = styled.div ` 
     font-family: 'Noto Sans Old Italic', sans-serif;
