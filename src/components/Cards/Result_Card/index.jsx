@@ -1,13 +1,19 @@
-import React, {useState} from 'react'
+import React, {useState,useEffect} from 'react'
 import { Box, Circle, Word, Img } from "./style";
-import CountUp from 'react-countup';
 
 export const Result_Card = ({number,type,src}) => {
   const [count,setCount] = useState(1)
 
-  // setInterval(()=>{
-  //   setCount(count +1)
-  // },10)
+  const changeNumber = ()=>{
+    if(count < number){
+      setTimeout(() => {
+        setCount(count +1)
+      }, 5);
+    }
+  }
+  useEffect(()=>{
+    changeNumber()
+  },[count])
 
     return (
         <>
@@ -16,7 +22,7 @@ export const Result_Card = ({number,type,src}) => {
             <Img src={src} alt="icons" />
           </Circle>
           <div>
-            <Word large={true}><CountUp start={0} duration={3} end={parseInt(number)} />+</Word>
+            <Word large={true}>{count}+</Word>
             <Word>{type}</Word>
           </div>
         </Box>
