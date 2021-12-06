@@ -12,7 +12,7 @@ export default function Home() {
           {/* <OnlineCardSection />
           <Result_Bar />
           <OurTeamSection /> */}
-          <Sertifikat />
+          {/* <Sertifikat /> */}
         </Wrapper>
       </Container>
     </Main>

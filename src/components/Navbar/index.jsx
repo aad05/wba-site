@@ -1,5 +1,5 @@
 import React from 'react' 
-import {Betwen, Container, Left, Right, Wrapper,Button,Icon,Item,Floater,Title,Link,activeStyle, Buttonmain} from './style'
+import {Betwen, Container, Left, Right, Wrapper,Button,Item,Floater,Title,Link,activeStyle, Buttonmain, ResponsiveWrapper} from './style'
 import {Navbarpath} from '../../utils/path'
 export const Navbar = () =>{
     return (
@@ -7,9 +7,9 @@ export const Navbar = () =>{
             <Container>
                 <Floater>
                 <Left>
-                    <Link to="/">
-                        <Button><Icon>WB</Icon></Button>
-                    </Link>
+                        <Link to="/">
+                            <Button logo={true}>WB</Button>
+                        </Link>
                 </Left>
                 <Betwen>
                 {Navbarpath.map(({ id, title, path }) => {
@@ -23,9 +23,7 @@ export const Navbar = () =>{
                 })}
                 </Betwen>
                 <Right>
-                    <Link to={"/logIn"}>
-                        <Button longer={true}><Title>Log In</Title></Button>
-                    </Link>
+                        <Link to={"/logIn"}><Button longer={true}>Log In</Button></Link>
                 </Right>
                 </Floater>
             </Container>
