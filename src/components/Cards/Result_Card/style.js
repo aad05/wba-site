@@ -9,11 +9,8 @@ export const Box = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  @media(max-width:1900px){
-    width: 33.3%;
-  }
-  @media(min-width:1900px){
-    width: 33.3%;
+  @media(max-width:1200px){
+    width: 300px;
   }
 `;
 
@@ -42,10 +39,16 @@ export const Circle = styled.div`
   @media(max-width: 1600px){  
     width: 110px;
     height: 110px;
+    margin-right: 30px;
   }
   @media(max-width: 1350px){  
     width: 100px;
     height: 100px;
+    margin-right: 20px;
+  }
+  @media(max-width: 1200px){  
+    width: 80px;
+    height: 80px;
   }
 `;
 
@@ -68,6 +71,14 @@ export const Img = styled.img`
     width: 45px;
     height: 45px;
   }
+  @media(max-width:1350px){
+    width: 40px;
+    height: 40px;
+  }
+  @media(max-width:1200px){
+    width: 35px;
+    height: 35px;
+  }
 `;
 
 export const Word = styled.div`
@@ -82,5 +93,8 @@ export const Word = styled.div`
   }
   @media(max-width:1350px){
   font-size: ${({ large }) => (large ? "25px" : "18px")};
+  }
+  @media(max-width:1200px){
+  font-size: ${({ large }) => (large ? "20px" : "16px")};
   }
 `;
