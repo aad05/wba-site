@@ -1,14 +1,16 @@
 import React from "react";
 import { Container, Wrapper, Main } from "./style";
 import Result_Bar from "./Result_Bar";
-import Online_Card from "../Cards/Online_Courses_Card";
+import OurTeamSection from "../OurTimeSection";
+import OnlineCardSection from "./OnlineCardSection";
 export default function Home() {
   return (
     <Main>
       <Container>
         <Wrapper>
-          <Online_Card />
+          <OnlineCardSection />
           <Result_Bar />
+          <OurTeamSection />
         </Wrapper>
       </Container>
     </Main>

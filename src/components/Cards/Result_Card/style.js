@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Box = styled.div`
-  width: 350px;
+  width: 33%;
   height: 70px;
   margin-left: 20px;
   margin-right: 20px;
@@ -9,7 +9,7 @@ export const Box = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  @media(max-width:1200px){
+  @media (max-width: 1200px) {
     width: 300px;
   }
 `;
@@ -24,29 +24,29 @@ export const Circle = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  @media(min-width: 1900px){  
+  @media (min-width: 1900px) {
     width: 140px;
     height: 140px;
   }
-  @media(max-width: 1900px){  
+  @media (max-width: 1900px) {
     width: 130px;
     height: 130px;
   }
-  @media(max-width: 1800px){  
+  @media (max-width: 1800px) {
     width: 120px;
     height: 120px;
   }
-  @media(max-width: 1600px){  
+  @media (max-width: 1600px) {
     width: 110px;
     height: 110px;
     margin-right: 30px;
   }
-  @media(max-width: 1350px){  
+  @media (max-width: 1350px) {
     width: 100px;
     height: 100px;
     margin-right: 20px;
   }
-  @media(max-width: 1200px){  
+  @media (max-width: 1200px) {
     width: 80px;
     height: 80px;
   }
@@ -55,27 +55,27 @@ export const Circle = styled.div`
 export const Img = styled.img`
   width: 40px;
   height: 40px;
-  @media(min-width:1900px){
+  @media (min-width: 1900px) {
     width: 60px;
     height: 60px;
   }
-  @media(max-width:1900px){
+  @media (max-width: 1900px) {
     width: 55px;
     height: 55px;
   }
-  @media(max-width:1800px){
+  @media (max-width: 1800px) {
     width: 50px;
     height: 50px;
   }
-  @media(max-width:1600px){
+  @media (max-width: 1600px) {
     width: 45px;
     height: 45px;
   }
-  @media(max-width:1350px){
+  @media (max-width: 1350px) {
     width: 40px;
     height: 40px;
   }
-  @media(max-width:1200px){
+  @media (max-width: 1200px) {
     width: 35px;
     height: 35px;
   }
@@ -85,16 +85,16 @@ export const Word = styled.div`
   font-size: ${({ large }) => (large ? "40px" : "24px")};
   margin-bottom: 1px;
   font-weight: ${({ large }) => (large ? "600" : "normal")};
-  @media(max-width:1900px){
-  font-size: ${({ large }) => (large ? "40px" : "23px")};
+  @media (max-width: 1900px) {
+    font-size: ${({ large }) => (large ? "40px" : "23px")};
   }
-  @media(max-width:1600px){
-  font-size: ${({ large }) => (large ? "30px" : "20px")};
+  @media (max-width: 1600px) {
+    font-size: ${({ large }) => (large ? "30px" : "20px")};
   }
-  @media(max-width:1350px){
-  font-size: ${({ large }) => (large ? "25px" : "18px")};
+  @media (max-width: 1350px) {
+    font-size: ${({ large }) => (large ? "25px" : "18px")};
   }
-  @media(max-width:1200px){
-  font-size: ${({ large }) => (large ? "20px" : "16px")};
+  @media (max-width: 1200px) {
+    font-size: ${({ large }) => (large ? "20px" : "16px")};
   }
 `;

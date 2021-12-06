@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
   width: 1600px;
   margin-top: 100px;
   @media (max-width: 1500px) {
-    width: 1000px;
+    width: 1600px;
   }
   @media (max-width: 1300px) {
     width: 850px;

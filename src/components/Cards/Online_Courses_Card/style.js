@@ -18,18 +18,18 @@ export const Container = styled.div`
   :hover {
     box-shadow: -10px -10px 8px #ffffff, 20px 20px 12px rgba(13, 39, 80, 0.16);
   }
-  @media(min-width:2000px){
+  @media (min-width: 2000px) {
     height: 700px;
     flex-direction: column;
     justify-content: space-between;
   }
-  @media(min-width:1000px){
+  /* @media (min-width: 1000px) {
     width: 30%;
-  }
-  @media(max-width:1350px){
+  } */
+  @media (max-width: 1350px) {
     height: 550px;
   }
-  @media(max-width:1250px){
+  @media (max-width: 1250px) {
     height: 530px;
   }
 `;
@@ -47,10 +47,10 @@ export const Box = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  @media(max-width:2000px){
+  @media (max-width: 2000px) {
     margin-bottom: 20px;
   }
-  @media(max-width:1250px){
+  @media (max-width: 1250px) {
     padding-top: 10px;
   }
 `;
@@ -86,8 +86,8 @@ export const Item = styled.div`
   color: ${({ more }) => more && "#2D4CC8"};
   font-size: ${({ more }) => (more ? "16px" : "20px")};
   margin-bottom: 3px;
-  @media(max-width:1160px){
-  font-size: ${({ more }) => (more ? "13px" : "18px")};
+  @media (max-width: 1160px) {
+    font-size: ${({ more }) => (more ? "13px" : "18px")};
   }
 `;
 
@@ -96,8 +96,8 @@ export const Text = styled.p`
   color: rgba(49, 52, 75, 0.6);
   font-size: ${({ small }) => (small ? "15px" : "18px")};
   margin-top: ${({ small }) => small && "13px"};
-  @media(max-width:1152px){
-  font-size: ${({ small }) => (small ? "13px" : "18px")};
+  @media (max-width: 1152px) {
+    font-size: ${({ small }) => (small ? "13px" : "18px")};
   }
 `;
 
@@ -122,10 +122,10 @@ export const Btn = styled.div`
     box-shadow: inset -5px -5px 8px rgba(255, 255, 255, 0.64),
       inset 5px 5px 8px rgba(13, 39, 80, 0.16);
   }
-  @media(max-width:1260px){
+  @media (max-width: 1260px) {
     width: 150px;
   }
-  @media(max-width:1100px){
+  @media (max-width: 1100px) {
     width: 130px;
   }
 `;
