@@ -19,10 +19,13 @@ export const Container = styled.div`
   :hover {
     box-shadow: -5px -5px 20px #ffffff, 20px 20px 12px rgba(13, 39, 80, 0.16);
   }
-  @media (max-width: 1100px) {
+
+  @media (max-width: 1300px) {
     width: 300px;
     height: 300px;
     padding: 80px 0px 0px 0px;
+    margin-left: 10px;
+    margin-right: 10px;
 
     :hover {
       box-shadow: -5px -5px 20px #ffffff, 13px 13px 12px rgba(13, 39, 80, 0.16);
@@ -43,7 +46,7 @@ export const Circle = styled.div`
   position: absolute;
   left: 26%;
   top: -100px;
-  @media (max-width: 1100px) {
+  @media (max-width: 1300px) {
     width: 130px;
     height: 130px;
     left: 28%;
@@ -61,7 +64,7 @@ export const Img = styled.img`
     width: 100%;
     height: 100%;
   }
-  @media (max-width: 1100px) {
+  @media (max-width: 1300px) {
     width: 120px;
     height: 120px;
     transition: all 0.7s;
@@ -79,7 +82,7 @@ export const Text = styled.div`
   margin-top: ${({ bottom }) => (bottom ? "5px" : "20px")};
   width: ${({ width }) => width && "370px"};
   text-align: ${({ width }) => width && "center"};
-  @media (max-width: 1100px) {
+  @media (max-width: 1300px) {
     font-size: ${({ small }) => (small ? "10px" : "17px")};
     margin-top: ${({ bottom }) => (bottom ? "5px" : "10px")};
     width: ${({ width }) => width && "280px"};
@@ -99,7 +102,7 @@ export const Icons = styled.img`
   margin-top: 20px;
   margin-bottom: 10px;
 
-  @media (max-width: 1100px) {
+  @media (max-width: 1300px) {
     width: 14px;
     height: 14px;
     margin-left: 7px;
