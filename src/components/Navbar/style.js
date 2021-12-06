@@ -10,14 +10,14 @@ export const Wrapper = styled.div `
     height: 90px;
 `
 export const Container = styled.div `
-    width: 95%;
+    width: 90%;
     margin: auto;
 `
 export const Left = styled.div ``
 export const Betwen = styled.div `
     display: flex;
     width: 700px;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     @media (max-width: 1700px) {
         width: 900px;
@@ -32,10 +32,10 @@ export const Betwen = styled.div `
         width: 600px;
     }
     @media (max-width: 1100px) {
-        width: 550px;
+        width: 530px;
     }
   @media (max-width: 1000px) {
-        width: 500px;
+        width: 450px;
     }
 `
 export const Right = styled.div ``
@@ -90,7 +90,7 @@ export const Item = styled.div `
 `
 export const Floater = styled.div `
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 `
 export const Title = styled.div ` 
     font-family: 'Noto Sans Old Italic', sans-serif;

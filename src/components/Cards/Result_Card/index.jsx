@@ -1,7 +1,7 @@
 import React, {useState,useEffect} from 'react'
 import { Box, Circle, Word, Img } from "./style";
 
-export const Result_Card = ({number,type,src}) => {
+const Result_Card = ({number,type,src}) => {
   const [count,setCount] = useState(1)
 
   const changeNumber = ()=>{
@@ -14,7 +14,6 @@ export const Result_Card = ({number,type,src}) => {
   useEffect(()=>{
     changeNumber()
   },[count])
-
     return (
         <>
         <Box>

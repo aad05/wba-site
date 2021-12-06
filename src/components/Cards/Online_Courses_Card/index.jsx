@@ -12,14 +12,14 @@ import {
   Text,
   Btn,
 } from "./style";
-import img from "../../../assets/img/onlineCard.png";
-import star from "../../../assets/icon/star.svg";
-import more from "../../../assets/icon/more.svg";
+import Online_Card from "../../../assets/imgs/Online_Corses.png";
+import star from '../../../assets/icons/star.svg'
+import Arrow_left from '../../../assets/icons/arrow-left.svg'
 
 export const OnlineCourseCard = ({ logo, name, price, status }) => {
   return (
     <Container>
-      <Img src={img} alt="online-img" />
+      <Img src={Online_Card} alt="online-img" />
       <Box>
         <Flexing>
           <Div>
@@ -27,7 +27,7 @@ export const OnlineCourseCard = ({ logo, name, price, status }) => {
             <Name>{name}</Name>
           </Div>
           <Div>
-            <Name large>
+            <Name large={true}>
               <strong>{price}$</strong>
               /moth
             </Name>
@@ -42,16 +42,16 @@ export const OnlineCourseCard = ({ logo, name, price, status }) => {
           <Star src={star} alt="star" />
           <Star src={star} alt="star" />
         </Div>
-        <Text small>
+        <Text small={true}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
           velit consectetur donec ornare at sagittis. Nisl nisi odio viverra
           nunc pharetra.
         </Text>
-        <Flexing top>
+        <Flexing top={true}>
           <Btn>Buy now</Btn>
-          <Div more>
-            <Item more>Watch Intro</Item>
-            <Star more src={more} alt="icon" />
+          <Div more={true}>
+            <Item more={true}>Watch Intro</Item>
+            <Star more={true} src={Arrow_left} alt="icon" />
           </Div>
         </Flexing>
       </Box>

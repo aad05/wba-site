@@ -5,10 +5,11 @@ export const Main = styled.div `
 `
 
 export const Container = styled.div `
-    width: 95%;
+    width: 90%;
     margin: auto;
 `
 export const Wrapper = styled.div ` 
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
 `
