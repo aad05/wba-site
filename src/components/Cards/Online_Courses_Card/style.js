@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 440px;
-  height: 610px;
+  height: 100%;
   margin-left: 20px;
   margin-right: 20px;
   background: #e6e7ee;
@@ -19,18 +19,8 @@ export const Container = styled.div`
     box-shadow: -10px -10px 8px #ffffff, 20px 20px 12px rgba(13, 39, 80, 0.16);
   }
   @media (min-width: 2000px) {
-    height: 700px;
     flex-direction: column;
     justify-content: space-between;
-  }
-  /* @media (min-width: 1000px) {
-    width: 30%;
-  } */
-  @media (max-width: 1350px) {
-    height: 550px;
-  }
-  @media (max-width: 1250px) {
-    height: 530px;
   }
 `;
 
